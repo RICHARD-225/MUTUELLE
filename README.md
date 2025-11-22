@@ -45,8 +45,8 @@ Site web complet pour la Mutuelle Chrétienne de Côte d'Ivoire (MUCHRE-CI).
 
 1. **Cloner le projet**
 ```bash
-git clone https://github.com/RICHARD-225/muchre-ci.git
-cd muchre-ci
+git clone https://github.com/RICHARD-225/MUTUELLE.git
+cd MUTUELLE
 ```
 
 2. **Installer les dépendances**
