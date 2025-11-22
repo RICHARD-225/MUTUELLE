@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #1E90FF;
+  --secondary: #FFA500;
+  --neutral: #FFFFFF;
+  font-family: 'Poppins', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes softFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-fade-in > * {
+  opacity: 0;
+  animation: softFadeIn 0.8s ease-out forwards;
+}
+
+.page-fade-in > *:nth-child(1) { animation-delay: 0.05s; }
+.page-fade-in > *:nth-child(2) { animation-delay: 0.15s; }
+.page-fade-in > *:nth-child(3) { animation-delay: 0.25s; }
+.page-fade-in > *:nth-child(4) { animation-delay: 0.35s; }
+.page-fade-in > *:nth-child(5) { animation-delay: 0.45s; }
+.page-fade-in > *:nth-child(6) { animation-delay: 0.55s; }
+.page-fade-in > *:nth-child(7) { animation-delay: 0.65s; }
+.page-fade-in > *:nth-child(8) { animation-delay: 0.75s; }
+.page-fade-in > *:nth-child(9) { animation-delay: 0.85s; }
+.page-fade-in > *:nth-child(10) { animation-delay: 0.95s; }
